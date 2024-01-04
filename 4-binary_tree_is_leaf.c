@@ -1,19 +1,21 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_leaf - Deletes an entire binary tree
+ * binary_tree_is_leaf - Checks if a node is a leaf
  *
- * @tree: the tree to be deleted in it's entirety
+ * @node: the node to check
  *
- * Return: 0
+ * Return: 1 (Success)) 0 (Failure)
  */
 int binary_tree_is_leaf(binary_tree_t *node)
 {
-	if (tree == NULL)
-	{
-		return;
-	}
-	binary_tree_is_leaf(tree->left);
-	binary_tree_is_leaf(tree->right);
-	free(tree);
+	if (node == NULL)
+		return (0);
+
+	if (node->left == NULL && node->right == NULL)
+		return (1)
+
+	else
+		return (0);
+
 }
