@@ -9,7 +9,9 @@
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	size_t depths, node_count, perfect_node_count;
+	size_t depths;
+	size_t node_count;
+	size_t perfect_node_count;
 
 	depths = binary_tree_depth(tree);
 
